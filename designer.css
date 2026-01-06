@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* para criar uma variavel no css nois utilizamos :root */
+/* e para declarar uma variavel nis utilizamos -- */
+/* para criar uma adaptação de imagem e interface nois usamos min-width para largura minima e max-width para largura maxima */
+/* use o margin auto para esse tipo de alteração */
+/* para modificar a linha de baixo do texto nois usamos line-height */
+/* para mudar a posição de um estilo de um lista nois usamos list-style-position: inside; */
+/* para criar uma coluna dentro de uma lista nois usamos columns */
+/* para botar uma emoji ou qualquer coisa dentro de todos paragrafos de uma lista nois usamos list-style-type: ''; */
+/* para fazer os box levels colarem nois usamos -20px nas alterações de padding e margin */
+/* para adaptar um player e concerta alguns erros usamos position: relative; na div e position: absolute; no iframe, sempre use porcentagem nessas alterações */
+:root{
+    --cor0: black;
+    --cor1: white;
+    --cor2: rgb(48, 8, 87);
+    --cor3: rgb(34, 11, 56);
+    --cor4: rgba(255, 255, 255, 0.726);
+    --cor5: blueviolet;
+    --cor6: rgb(95, 30, 156);
+    --cor7: rgb(22, 22, 22);
+    --cor8: rgba(20, 20, 20, 0.521);
+    --cor9: rgba(114, 36, 187, 0.459);
+
+    --fontP: arial, verdana, helvetica, sans-serif;
+}
+@font-face {
+            font-family: 'foda';
+            src: url('04B_30__.TTF') format('opentype');
+        }
+        .logo{
+            min-width: 5%;
+            max-width: 100%;
+            font: 200 3em 'foda';
+            color: white;
+            text-shadow: 4px 4px 1px rgb(73, 6, 102);
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'foda2';
+            src: url('Retro\ Gaming.ttf') format('opentype');
+        }
+        .link>a{
+            font-family: 'foda2';
+        }
+body{
+    margin: 0px;
+    background: var(--cor0);
+    background-attachment: fixed;
+    min-width: 320px;
+    max-width: 1351px;
+}
+header{
+    padding: 20px 0px 100px 0px;
+    min-width: 320px;
+    max-width: 1351px;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(to top, var(--cor0), var(--cor2));
+    background-attachment: fixed;
+    margin: 0px 0px 10px 0px;
+    background: linear-gradient(to top, var(--cor0), var(--cor3));
+}
+header>h1{
+    text-align: center;
+}
+.introdução{
+    color: var(--cor4);
+    margin: 10px 0px, 30px 10px;
+    padding: 0px 0px 0px 10px;
+    font: 300 1em var(--fontP);
+    text-shadow: 1px 1px 3px var(--cor0);
+}
+/* -----------------------------------------links------------------------------------------------*/
+.links{
+    min-width: 1%;
+    max-width: 100%;
+    text-align: left;
+    margin: 0px 0px 0px 80px;
+}
+.links>a{
+    text-decoration: none;
+    margin: 10px;
+    font: 0 30px var(--fontP);
+    color: var(--cor1);
+    padding: 5px;
+    font-family: 'foda2';
+    height: 30px;
+    text-shadow: 1px 1px 1px var(--cor5);
+}
+.links>a:hover{
+    color: var(--cor6);
+    font-size: 18px;
+    text-shadow: none;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.rpgs{
+    background: var(--cor7);
+    min-width: 320px;
+    max-width: 800px;
+    margin: 10px 277px 10px 287px;
+    box-shadow: -1px 0px 1px 1px var(--cor8);
+    border-radius: 10px;
+    padding: 0px 0px 10px 0px;
+    margin: auto;
+}
+.ordem{
+    text-align: center;
+}
+.ordem2{
+    min-width: 5%;
+    max-width: 100%; 
+}
+.rpgs>p{
+    font: 500 14px var(--fontP);
+    color: var(--cor1);
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 2em;
+}
+.historia{
+    color: var(--cor1);
+    background: linear-gradient(to right, var(--cor9), var(--cor7));
+    padding: 0px 0px 0px 10px;
+    font: normal 2em 'foda2';
+    text-shadow: 1px 1px 1px var(--cor0);
+}
+.rakin2{
+    min-width: 0px;
+    max-width: 1351px;
+    height: 400px;
+}
+.rakin{
+    text-align: center;
+}
+.kian{
+    text-align: center;
+}
+.kian2{
+    width: 200px;
+}
+.campanha1{
+    color: var(--cor1);
+    background: linear-gradient(to right, var(--cor9), var(--cor7));
+    padding: 0px 0px 0px 10px;
+    font: normal 2em 'foda2';
+    text-shadow: 1px 1px 1px var(--cor0);
+}
+.vo{
+    padding: 20px;
+    background: linear-gradient(to right, rgb(66, 11, 117), rgb(22, 22, 22)80%);
+    min-width: 320px;
+    max-width: 800px;
+    position: relative;
+    padding-bottom: 54%;
+}
+.y1{
+    margin: 10px 0px 0px 0px;
+}
+.rpgs>p{
+    padding: 0px 20px 0px 20px;
+}
+.assistir{
+    background: rgba(255, 255, 255, 0.747);
+    min-width: 320px;
+    max-width: 750px;
+    margin: 25px 25px 5px 25px;
+    padding: 0px 0px 5px 0px;
+    border-radius: 20px;
+}
+.título{
+    font: 300 1em var(--fontP);
+    color: var(--cor1);
+    padding: 10px;
+    background: rgb(44, 7, 78);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.introdução2{
+    text-align: center;
+    font-family: var(--fontP);
+}
+.temp{
+    text-decoration: none;
+    color: var(--cor0);
+    columns: 3;
+}
+.temp:hover{
+    text-decoration: inline;
+}
+ul{
+    min-width: none;
+    max-width: 500px;
+    margin: auto;
+    list-style-type: '\2714';
+    list-style-position: inside;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+}
+.temp2{
+    width: 200px;
+}
+li:hover{
+    text-decoration: underline;
+}
+.créditos{
+    background: var(--cor5);
+    text-align: center;
+    height: 30px;
+}
+.créditos>p{
+    padding: 5px 0px 5px 0px;
+    color: rgba(255, 255, 255, 0.397);
+    font: normal 15px var(--fontP);
+}
+.rpo{
+    font: normal 15px var(--fontP);
+    columns: 3;
+}
+.rede{
+    text-decoration: none;
+    font: 600 15px var(--fontP);
+    color: rgba(255, 255, 255, 0.479);
+}
+.rede:hover{
+    text-decoration: underline;
+}
+.introdução3{
+    font: normal 15px var(--fontP);
+    text-align: right;
+    padding: 0px 15px 0px 0px;
+}
+.fds{
+    text-decoration: none;
+    color: var(--cor5);
+    font: 600 15px var(--fontP);
+}
+.fds:hover{
+    text-decoration: underline;
+}
+.introdução3>p{
+    font: normal 13px var(--fontP);
+}
+.link2{
+    text-decoration: none;
+    color: var(--cor5);
+    font: 500 1em var(--fontP);
+}
+.link2::after{
+    content: '\1F517';
+}
+.link2:hover{
+    text-decoration: underline;
+    color: rgba(137, 43, 226, 0.671);
+}
+.camp1{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
